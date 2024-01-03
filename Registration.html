@@ -34,8 +34,8 @@
           return liff.getProfile();
         } else {
           liff.login({
-            redirectUri: "https://docs.google.com/forms/d/e/1FAIpQLSd7TF7NvNTtdSwh0HADH-VOySBr6t7mcDHuxLNiusXJN8BXRA/viewform?usp=pp_url&entry.467254449=${profile.userId}&entry.1559541434=${profile.displayName}",
-          });
+  redirectUri: `https://docs.google.com/forms/d/e/1FAIpQLSd7TF7NvNTtdSwh0HADH-VOySBr6t7mcDHuxLNiusXJN8BXRA/viewform?usp=pp_url&entry.467254449=${profile.userId}&entry.1559541434=${profile.displayName}`,
+});
         }
       })
       .then((profile) => {
