@@ -22,7 +22,6 @@
         integrity="sha512-0p3K0H3S6Q4bEWZ/WmC94Tgit2ular2/n0ESdfEX8l172YyQj8re1Wu9s/HT9T/T2osUw5Gx/6pAZNk3UKbESw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- noty core CSS -->
-    <link href="../register/register.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
 
@@ -91,8 +90,7 @@
             const line_userId = profile.userId;
             const displayName = profile.displayName;
             console.log("line_userId : " + line_userId);
-            console.log("status : " + response_line.status);
-            $("#name").text("" + response_line.userName);
+            console.log("displayName : " + displayName);
 
             window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd7TF7NvNTtdSwh0HADH-VOySBr6t7mcDHuxLNiusXJN8BXRA/viewform?usp=pp_url&entry.467254449=" + line_userId + "&entry.1559541434=" + displayName;
 
